@@ -48,7 +48,7 @@ The table below lists each tool used in this report and its purpose.
 | Windows CMD | Identify local IP and MAC addresses. |
 
 # 4. Activities Performed
-# 4.1 Footprinting & Reconnaissance
+## 4.1 Footprinting & Reconnaissance
 I performed reconnaissance against the networkwalks.com domain using six Kali Linux tools: WHOIS,
 WhatWeb, Nslookup, Curl, Wafw00f and DNSRecon. Each tool was used to collect a different type of
 information about the target.
@@ -66,16 +66,16 @@ result identified ModSecurity (SpiderLabs).
 Finally, I used DNSRecon to enumerate DNS records. The results provided information relating to
 name servers, mail servers, SPF/TXT records, service records and DNS software information.
 
-# 4.2 Network Scanning with Zenmap
+## 4.2 Network Scanning with Zenmap
 For the second activity, I used Zenmap to perform network discovery on my local network. The
 practical required me to identify my local IP address and subnet, discover live hosts, identify their IP
 and MAC addresses, and generate a network topology.
 I first used the Windows ipconfig command to identify my local IP address and LAN subnet. I then
 entered the subnet into Zenmap and selected Ping Scan to identify active hosts.
 The example results provided in the practical identified four live hosts:
-• X.X.X.1
-• X.X.X.3
-• X.X.X.5
+- `X.X.X.1`
+- `X.X.X.3`
+- `X.X.X.5`
 The example results also included four MAC addresses.
 After completing the scan, I opened the Topology section in Zenmap, enabled the legend and saved
 the network topology in PDF format as required by the practical task.
@@ -104,25 +104,44 @@ by itself mean that the system is vulnerable. Further authorized security testin
 
 
 # 6. Recommendations
+
 Based on the observations from these activities, I recommend the following security improvements:
-1.	Review publicly exposed technology information
-Organizations should regularly review what information about their web technologies, CMS and plugins is publicly visible.
-2.	Keep software updated
-CMS platforms, plugins and other web technologies should be regularly updated and reviewed against current security advisories.
-3.	Review HTTP headers
-HTTP response headers should be reviewed to determine whether unnecessary technical information is being exposed.
-4.	Review DNS records regularly
-DNS records should be checked periodically to ensure that only required information and services are publicly exposed.
-5.	Properly configure and monitor the WAF
-Keep the WAF (ModSecurity) enabled and tuned, since it already blocks naive attacks.
-6.	Perform regular internal network discovery
-Organizations should periodically scan their own networks to identify active devices.
-7.	Investigate unknown devices
-Any unexpected device discovered during network scanning should be investigated and verified.
-8.	Maintain network documentation
-Network topology and device information should be documented and updated regularly.
-9.	Perform security testing with authorization
-Reconnaissance and scanning should only be performed against systems and networks where appropriate authorization has been provided.
+
+1. **Review Publicly Exposed Technology Information**
+
+   Organizations should regularly review what information about their web technologies, CMS platforms and plugins is publicly visible.
+
+2. **Keep Software Updated**
+
+   CMS platforms, plugins and other web technologies should be regularly updated and reviewed against current security advisories.
+
+3. **Review HTTP Headers**
+
+   HTTP response headers should be reviewed to determine whether unnecessary technical information is being exposed.
+
+4. **Review DNS Records Regularly**
+
+   DNS records should be checked periodically to ensure that only required information and services are publicly exposed.
+
+5. **Properly Configure and Monitor the WAF**
+
+   Keep the Web Application Firewall (ModSecurity) enabled, properly configured and regularly monitored to help protect against malicious web requests.
+
+6. **Perform Regular Internal Network Discovery**
+
+   Organizations should periodically scan their own networks to identify active devices and maintain network visibility.
+
+7. **Investigate Unknown Devices**
+
+   Any unexpected device discovered during network scanning should be investigated and verified to ensure it is authorized to access the network.
+
+8. **Maintain Network Documentation**
+
+   Network topology, IP addresses and device information should be documented and updated regularly.
+
+9. **Perform Security Testing with Authorization**
+
+   Reconnaissance and scanning should only be performed against systems and networks where appropriate authorization has been provided.
 
 # 7. Conclusion
 During Week 2 of my Cybersecurity & Ethical Hacking internship, I completed practical activities covering footprinting, reconnaissance and network scanning.
@@ -149,6 +168,16 @@ Finally, I learned that reconnaissance and scanning must always be performed wit
 <img width="1917" height="1020" alt="pingscan" src="https://github.com/user-attachments/assets/ed27435b-361f-47d6-95c7-c0a732aa9fdf" />
 
 <img width="1917" height="1020" alt="topology" src="https://github.com/user-attachments/assets/b844c86c-e2ef-4ab5-a099-ed0ca6ab8c6e" />
+
+- End -
+
+**👤 Author**
+**Waqas Karim CCIE**
+Cybersecurity Professional B084
+LinkedIn: https://www.linkedin.com/in/waqaskarim/
+
+**📌 Project Information:**
+**Program Name:** Cybersecurity program at Networkwalks | **Week:** 02 | 
 
 
 
